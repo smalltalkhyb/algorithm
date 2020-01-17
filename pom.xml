@@ -18,6 +18,7 @@
     <version>RELEASE</version>
     <modules>
         <module>math</module>
+        <module>data-struct</module>
     </modules>
     <name>algorithm-study</name>
 
