@@ -131,10 +131,6 @@ public class ArrayStruct<E> {
         return remove(0);
     }
 
-    //从数组中删除最后一个元素，返回删除的元素
-    public E rmoveLast(){
-        return remove(size-1);
-    }
 
     //从数组中删除元素
     public void removeElement(E e){
@@ -171,6 +167,16 @@ public class ArrayStruct<E> {
         data=newData;
     }
 
+
+    //从数组中删除最后一个元素，返回删除的元素
+    public E removeLast(){
+        return remove(size-1);
+    }
+
+
+    public E getLast(){
+        return get(size - 1);
+    }
 }
 
 
