@@ -131,6 +131,10 @@ public class ArrayStruct<E> {
         return remove(0);
     }
 
+    public E getFirst(){
+        return get(0);
+    }
+
 
     //从数组中删除元素
     public void removeElement(E e){
