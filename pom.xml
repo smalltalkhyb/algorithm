@@ -19,6 +19,7 @@
     <modules>
         <module>math</module>
         <module>data-struct</module>
+        <module>basic</module>
     </modules>
     <name>algorithm-study</name>
 
