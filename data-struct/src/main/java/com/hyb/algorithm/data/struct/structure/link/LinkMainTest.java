@@ -22,6 +22,8 @@ public class LinkMainTest {
 
         System.out.println(linkListStruct);
 
+        System.out.println( linkListStruct.hasCircle());
+
 
     }
 }

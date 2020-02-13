@@ -1,6 +1,8 @@
 package com.hyb.algorithm.basic.genericity;
 
 
+import java.util.LinkedList;
+
 //此处E可以随便写为任意的标识，比如T、E、K、V 等形式的参数，常用于表示泛型
 //实例化泛型类时，必须制定E 的具体类型
 public class GenericDemo<E> {
@@ -34,6 +36,7 @@ public class GenericDemo<E> {
 
         System.out.println(objectGenericDemo.getVal());
         System.out.println(objectGenericDemo.getClass().equals(integerGenericDemo.getClass()));
+
 
 //        if(integerGenericDemo instanceof GenericDemo<Integer> ){
 //

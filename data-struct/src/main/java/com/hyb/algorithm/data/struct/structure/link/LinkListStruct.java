@@ -182,4 +182,23 @@ public class LinkListStruct<E> {
     }
 
 
+    public boolean hasCircle(){
+        Node current=dummyHead.next;
+        Node quick=current;
+        Node slow=current;
+
+        while (quick!=null&&quick.next!=null){
+
+            slow=slow.next;
+            quick=quick.next.next;
+
+            if(quick==slow){
+                return true;
+            }
+        }
+        return  false;
+
+    }
+
+
 }
