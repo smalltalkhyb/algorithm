@@ -2,6 +2,7 @@ package com.hyb.algorithm.data.struct.structure.hash;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class JavaHashCodeMain {
 
@@ -29,6 +30,7 @@ public class JavaHashCodeMain {
         System.out.println(hashSet.size()); //不重写 equals  会是2  自定义重写是 1
 
         HashMap<Student,Integer> hashMap=new HashMap<>();
+        
 
         hashMap.put(student,100);
         hashMap.put(student2,200);
