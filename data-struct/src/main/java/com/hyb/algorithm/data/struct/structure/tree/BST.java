@@ -360,6 +360,46 @@ public class BST<E extends Comparable<E>> {
     }
 
 
+
+
+    public int rangeSumBST( E L, E R){
+       return rangeSumBST(root,L,R);
+    }
+
+    private int rangeSumBST(Node root, E L, E R) {
+
+        //中序遍历
+        Node curr=root;
+        Stack<Node> stack=new Stack<>();
+
+        int sum=0;
+
+        stack.push(root);
+
+        while(!stack.isEmpty()){
+            Node node=stack.pop();
+
+            if(node==null){
+                continue;
+            }
+
+            if(node.e.compareTo(L)>=0&&node.e.compareTo(R)<=0){
+                sum+=(Integer) node.e;
+            }
+
+            if(node.e.compareTo(L)>0){
+                stack.push(node.left);
+            }
+
+            if(node.e.compareTo(R)<0){
+                stack.push(node.right);
+            }
+        }
+
+        return sum;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

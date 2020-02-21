@@ -14,6 +14,14 @@ public class ArrayStruct<E> {
         size=0;
     }
 
+    public ArrayStruct(E[] arr){
+        data=(E[])new Object[arr.length];
+        size=arr.length;
+        for(int i=0;i<size;i++){
+            data[i]=arr[i];
+        }
+    }
+
     //无参数的构造函数，默认数组的容量capactity=10
     public ArrayStruct(){
         this(10);
@@ -142,6 +150,17 @@ public class ArrayStruct<E> {
         if(index!=-1){
             remove(index);
         }
+    }
+
+
+    public void  swap(int i,int j){
+        if(i<0||i>size||j<0||j>size){
+            throw new IllegalArgumentException("i,j is error");
+        }
+
+        E temp=data[i];
+        data[i]=data[j];
+        data[j]=temp;
     }
 
 
