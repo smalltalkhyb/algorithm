@@ -7,7 +7,8 @@ public class QuickSortTreeWays {
 
     public static void main(String[] args) {
         Integer N = 1000;
-        Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 10);
+        //Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 10);
+        Integer[] arr = new Integer[]{3, 2, 1, 5, 6, 4};
         //Integer[] arr = new Integer[]{46, 23, 45, 17, 6, 40, 22, 17, 30, 24};
         SortTestHelper.testSort("com.hyb.algorithm.data.struct.structure.sort.QuickSortTreeWays", arr);
 
