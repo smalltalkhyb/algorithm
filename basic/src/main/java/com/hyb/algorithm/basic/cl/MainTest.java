@@ -30,5 +30,8 @@ public class MainTest {
         System.out.println(c4.getName());
 
         System.out.println(c6.getName());
+
+
+        System.out.println(System.getProperty("java.class.path"));
     }
 }
